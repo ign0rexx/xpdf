@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="QtPDFCore.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XpdfApp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XpdfViewer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XpdfWidget.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xpdf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc\moc_XpdfViewer.cpp">
+      <Filter>QT Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc\moc_XpdfApp.cpp">
+      <Filter>QT Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc\moc_XpdfWidget.cpp">
+      <Filter>QT Generated Files</Filter>
+    </ClCompile>
+  <ClCompile Include="moc\qrc_icons.cpp"><Filter>QT Generated Files</Filter></ClCompile></ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="XpdfViewer.h">
+      <Filter>MOC Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XpdfApp.h">
+      <Filter>MOC Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XpdfWidget.h">
+      <Filter>MOC Headers</Filter>
+    </CustomBuild>
+  <CustomBuild Include="icons.qrc"><Filter>QRC Resources</Filter></CustomBuild></ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xpdf.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{88B6D765-5AA2-38CF-BAF2-77DCECA07F52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3228f089-bbda-449f-8d0f-3534163cb971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOC Headers">
+      <UniqueIdentifier>{0efba9dd-ff85-4d74-b08a-484e7a78db5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT Generated Files">
+      <UniqueIdentifier>{bb4dd6be-7155-47d9-af38-fb9a84286e80}</UniqueIdentifier>
+    </Filter>
+  <Filter Include="QRC Resources"><UniqueIdentifier>{eb077fd6-0552-4631-9bc1-ebd0241acd12}</UniqueIdentifier></Filter></ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

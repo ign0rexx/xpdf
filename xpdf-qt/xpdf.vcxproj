@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CAAE0664-37E1-3597-A68A-F9D28D7FB2FB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>xpdf</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Qt5Paths.vsprops" Label="Qt5" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\goo;..\fofi;..\splash;..\xpdf;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_WARNINGS;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fofi.lib;goo.lib;splash.lib;libxpdf.lib;xpdf_widget.lib;Qt5Guid.lib;Qt5Cored.lib;Qt5Widgetsd.lib;Qt5FontDatabaseSupportd.lib;Qt5EventDispatcherSupportd.lib;Qt5WindowsUIAutomationSupportd.lib;Qt5ThemeSupportd.lib;Qt5Networkd.lib;Qt5Svgd.lib;qtmaind.lib;qtfreetyped.lib;qtharfbuzzd.lib;qtlibpngd.lib;qtlibjpegd.lib;qtpcre2d.lib;qwindowsd.lib;qwindowsvistastyled.lib;qjpegd.lib;qsvgd.lib;imm32.lib;winmm.lib;ws2_32.lib;msimg32.lib;uxtheme.lib;dwmapi.lib;wtsapi32.lib;netapi32.lib;version.lib;userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>..\xpdf\winLongPath.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\goo;..\fofi;..\splash;..\xpdf;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_WARNINGS;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;XPDF_NETWORK;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fofi.lib;goo.lib;splash.lib;libxpdf.lib;xpdf_widget.lib;Qt5Guid.lib;Qt5Cored.lib;Qt5Widgetsd.lib;Qt5FontDatabaseSupportd.lib;Qt5EventDispatcherSupportd.lib;Qt5WindowsUIAutomationSupportd.lib;Qt5ThemeSupportd.lib;Qt5Networkd.lib;Qt5Svgd.lib;qtmaind.lib;qtfreetyped.lib;qtharfbuzzd.lib;qtlibpngd.lib;qtlibjpegd.lib;qtpcre2d.lib;qwindowsd.lib;qwindowsvistastyled.lib;qjpegd.lib;qsvgd.lib;imm32.lib;winmm.lib;ws2_32.lib;msimg32.lib;uxtheme.lib;dwmapi.lib;wtsapi32.lib;netapi32.lib;version.lib;userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>..\xpdf\winLongPath.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\goo;..\fofi;..\splash;..\xpdf;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4290;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;QT_NO_DEBUG;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fofi.lib;goo.lib;splash.lib;libxpdf.lib;xpdf_widget.lib;Qt5Gui.lib;Qt5Core.lib;Qt5Widgets.lib;Qt5FontDatabaseSupport.lib;Qt5EventDispatcherSupport.lib;Qt5WindowsUIAutomationSupport.lib;Qt5ThemeSupport.lib;Qt5Network.lib;Qt5Svg.lib;qtmain.lib;qtfreetype.lib;qtharfbuzz.lib;qtlibpng.lib;qtlibjpeg.lib;qtpcre2.lib;qwindows.lib;qwindowsvistastyle.lib;qjpeg.lib;qsvg.lib;imm32.lib;winmm.lib;ws2_32.lib;msimg32.lib;uxtheme.lib;dwmapi.lib;wtsapi32.lib;netapi32.lib;version.lib;userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>
+      </ImportLibrary>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>..\xpdf\winLongPath.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\goo;..\fofi;..\splash;..\xpdf;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4290;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;QT_NO_DEBUG;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fofi.lib;goo.lib;splash.lib;libxpdf.lib;xpdf_widget.lib;Qt5Gui.lib;Qt5Core.lib;Qt5Widgets.lib;Qt5FontDatabaseSupport.lib;Qt5EventDispatcherSupport.lib;Qt5WindowsUIAutomationSupport.lib;Qt5ThemeSupport.lib;Qt5Network.lib;Qt5Svg.lib;qtmain.lib;qtfreetype.lib;qtharfbuzz.lib;qtlibpng.lib;qtlibjpeg.lib;qtpcre2.lib;qwindows.lib;qwindowsvistastyle.lib;qjpeg.lib;qsvg.lib;imm32.lib;winmm.lib;ws2_32.lib;msimg32.lib;uxtheme.lib;dwmapi.lib;wtsapi32.lib;netapi32.lib;version.lib;userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>
+      </ImportLibrary>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>..\xpdf\winLongPath.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="XpdfViewer.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating moc_XpdfViewer.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_XpdfViewer.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc -p.. XpdfViewer.h &gt;moc\moc_XpdfViewer.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc -p.. XpdfViewer.h &gt;moc\moc_XpdfViewer.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc\moc_XpdfViewer.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_XpdfViewer.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_XpdfViewer.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_XpdfViewer.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc -p.. XpdfViewer.h &gt;moc\moc_XpdfViewer.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc -p.. XpdfViewer.h &gt;moc\moc_XpdfViewer.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc\moc_XpdfViewer.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_XpdfViewer.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="XpdfApp.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating moc_XpdfApp.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_XpdfApp.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc -p.. XpdfApp.h &gt;moc\moc_XpdfApp.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc -p.. XpdfApp.h &gt;moc\moc_XpdfApp.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc\moc_XpdfApp.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_XpdfApp.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_XpdfApp.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_XpdfApp.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc -p.. XpdfApp.h &gt;moc\moc_XpdfApp.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc -p.. XpdfApp.h &gt;moc\moc_XpdfApp.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc\moc_XpdfApp.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_XpdfApp.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="XpdfWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating moc_XpdfWidget.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_XpdfWidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc -p.. XpdfWidget.h &gt;moc\moc_XpdfWidget.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc -p.. XpdfWidget.h &gt;moc\moc_XpdfWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc\moc_XpdfWidget.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_XpdfWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_XpdfWidget.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_XpdfWidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc -p.. XpdfWidget.h &gt;moc\moc_XpdfWidget.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc -p.. XpdfWidget.h &gt;moc\moc_XpdfWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc\moc_XpdfWidget.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_XpdfWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="icons.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_icons.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating qrc_icons.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rcc -o moc\qrc_icons.cpp icons.qrc</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rcc -o moc\qrc_icons.cpp icons.qrc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc\qrc_icons.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\qrc_icons.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_icons.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating qrc_icons.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rcc -o moc\qrc_icons.cpp icons.qrc</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rcc -o moc\qrc_icons.cpp icons.qrc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc\qrc_icons.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\qrc_icons.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QtPDFCore.cc" />
+    <ClCompile Include="XpdfApp.cc" />
+    <ClCompile Include="XpdfViewer.cc" />
+    <ClCompile Include="XpdfWidget.cc" />
+    <ClCompile Include="xpdf.cc" />
+    <ResourceCompile Include="xpdf.rc" />
+    <ClCompile Include="moc\moc_XpdfViewer.cpp" />
+    <ClCompile Include="moc\moc_XpdfApp.cpp" />
+    <ClCompile Include="moc\moc_XpdfWidget.cpp" />
+    <ClCompile Include="moc\qrc_icons.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AcroForm.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Annot.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Array.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltinFont.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltinFontTables.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Catalog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CharCodeToUnicode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Decrypt.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dict.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FontEncodingTables.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxFont.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxState.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalParams.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JArithmeticDecoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JBIG2Stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPXStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lexer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Link.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NameToCharCode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionalContent.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Outline.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputDev.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Page.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PDF417Barcode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PDFDoc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PDFDocEncoding.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PSTokenizer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SecurityHandler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextString.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnicodeMap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnicodeRemapping.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnicodeTypeTable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UTF8.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XFAScanner.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XRef.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zoox.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{88B6D765-5AA2-38CF-BAF2-77DCECA07F52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ea85fa00-e2e3-486c-851e-b474907a10ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FoFiBase.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FoFiEncodings.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FoFiIdentifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FoFiTrueType.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FoFiType1.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FoFiType1C.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7d779ca9-6c61-4694-b4b3-11a7438ff7b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FixedPoint.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gfile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GHash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gmem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gmempp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GString.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parseargs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trace.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

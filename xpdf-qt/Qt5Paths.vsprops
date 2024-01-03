@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Platform)'=='x64'">
+    <ExecutablePath>$(ExecutablePath);$(QT5DIR64)\qtbase\bin\;$(QT5DIR64)\qttools\bin\</ExecutablePath>
+    <IncludePath>$(QT5DIR64)\qtbase\include;$(QT5DIR64)\qtbase\include\QtCore;$(QT5DIR64)\qtbase\include\QtGui;$(QT5DIR64)\qtbase\include\QtWidgets;$(QT5DIR64)\qtbase\include\QtNetwork;$(IncludePath)</IncludePath>
+    <LibraryPath>$(QT5DIR64)\qtbase\lib\;$(QT5DIR64)\qtbase\plugins\platforms\;$(QT5DIR64)\qtbase\plugins\styles\;$(QT5DIR64)\qtbase\plugins\imageformats\;$(QT5DIR64)\qtsvg\lib\;$(QT5DIR64)\qtsvg\plugins\imageformats\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='Win32'">
+    <ExecutablePath>$(ExecutablePath);$(QT5DIR)\qtbase\bin\;$(QT5DIR)\qttools\bin\</ExecutablePath>
+    <IncludePath>$(QT5DIR)\qtbase\include;$(QT5DIR)\qtbase\include\QtCore;$(QT5DIR)\qtbase\include\QtGui;$(QT5DIR)\qtbase\include\QtWidgets;$(QT5DIR)\qtbase\include\QtNetwork;$(IncludePath)</IncludePath>
+    <LibraryPath>$(QT5DIR)\qtbase\lib\;$(QT5DIR)\qtbase\plugins\platforms\;$(QT5DIR)\qtbase\plugins\styles\;$(QT5DIR)\qtbase\plugins\imageformats\;$(QT5DIR)\qtsvg\lib\;$(QT5DIR)\qtsvg\plugins\imageformats\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+</Project>

@@ -25,6 +25,16 @@
 #include "XpdfApp.h"
 #include "gmempp.h"
 
+#ifdef QT_STATIC
+#include <QtPlugin>
+#ifdef _WIN32
+Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin)
+Q_IMPORT_PLUGIN(QWindowsVistaStylePlugin)
+#endif
+Q_IMPORT_PLUGIN(QJpegPlugin);
+Q_IMPORT_PLUGIN(QSvgPlugin);
+#endif
+
 //------------------------------------------------------------------------
 // command line options
 //------------------------------------------------------------------------

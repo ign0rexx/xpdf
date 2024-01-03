@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{18a6885a-23c1-40a8-9d07-910236134a93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Splash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashBitmap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashClip.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashFTFont.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashFTFontEngine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashFTFontFile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashFont.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashFontEngine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashFontFile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashFontFileID.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashPath.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashPattern.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashScreen.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashState.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashXPath.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashXPathScanner.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
