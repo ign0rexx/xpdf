@@ -1286,11 +1286,6 @@ void XpdfViewer::cmdContinuousMode(GString *args[], int nArgs,
 }
 
 void XpdfViewer::cmdCopy(GString *args[], int nArgs, QInputEvent *event) {
-  if (!currentTab->pdf->okToExtractText()) {
-    QMessageBox::warning(NULL, "Xpdf Error",
-			 "This PDF file does not allow copying text");
-    return;
-  }
   currentTab->pdf->copySelection();
 }
 

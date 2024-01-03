@@ -1164,19 +1164,19 @@ GBool XRef::getEncryption(int *permFlagsA, GBool *ownerPasswordOkA,
 }
 
 GBool XRef::okToPrint(GBool ignoreOwnerPW) {
-  return (!ignoreOwnerPW && ownerPasswordOk) || (permFlags & permPrint);
+  return gTrue;
 }
 
 GBool XRef::okToChange(GBool ignoreOwnerPW) {
-  return (!ignoreOwnerPW && ownerPasswordOk) || (permFlags & permChange);
+  return gTrue;
 }
 
 GBool XRef::okToCopy(GBool ignoreOwnerPW) {
-  return (!ignoreOwnerPW && ownerPasswordOk) || (permFlags & permCopy);
+  return gTrue;
 }
 
 GBool XRef::okToAddNotes(GBool ignoreOwnerPW) {
-  return (!ignoreOwnerPW && ownerPasswordOk) || (permFlags & permNotes);
+  return gTrue;
 }
 
 Object *XRef::fetch(int num, int gen, Object *obj, int recursion) {
