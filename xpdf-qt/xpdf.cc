@@ -49,7 +49,14 @@ int CALLBACK WinMain(HINSTANCE hIstance, HINSTANCE hPrevInstance,
   }
   argv[argc] = NULL;
   LocalFree(args);
-  ret = main(argc, argv);
+
+  char **argvCopy = (char **) gmallocn(argc + 1, sizeof(char *));
+  memcpy(argvCopy, argv, (argc + 1) * sizeof(char *));
+  int argcCopy = argc;
+
+  ret = main(argcCopy, argvCopy);
+  gfree(argvCopy);
+
   for (i = 0; i < argc; ++i) {
     gfree(argv[i]);
   }
