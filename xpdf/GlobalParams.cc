@@ -1009,6 +1009,13 @@ void GlobalParams::createDefaultKeyBindings() {
 				     xpdfKeyContextAny, "zoomFitPage"));
   keyBindings->append(new KeyBinding('w', xpdfKeyModNone,
 				     xpdfKeyContextAny, "zoomFitWidth"));
+
+#ifdef _WIN32
+  keyBindings->append(new KeyBinding(xpdfKeyCodeF1 + 2, xpdfKeyModNone,
+				     xpdfKeyContextAny, "find"));
+  keyBindings->append(new KeyBinding(xpdfKeyCodeInsert, xpdfKeyModCtrl,
+				     xpdfKeyContextAny, "copy"));
+#endif
 }
 
 void GlobalParams::parseFile(GString *fileName, FILE *f) {
